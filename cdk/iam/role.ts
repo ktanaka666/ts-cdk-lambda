@@ -1,5 +1,5 @@
 import * as iam from '@aws-cdk/aws-iam';
-import { accountId, lambdaRoleName } from '../constant';
+import { lambdaRoleName } from '../../constants';
 
 type RoleSetting = {
   id: string;
@@ -9,6 +9,6 @@ export const lambdaRoleSetting: RoleSetting = {
   id: lambdaRoleName,
   props: {
     roleName: lambdaRoleName,
-    assumedBy: new iam.AccountPrincipal(accountId),
+    assumedBy: new iam.ServicePrincipal('lambda.amazonaws.com'),
   },
 };

@@ -1,5 +1,5 @@
 import * as iam from '@aws-cdk/aws-iam';
-import { lambdaManagedPolicyName } from '../constant';
+import { lambdaManagedPolicyName } from '../../constants';
 
 const policyStatements: iam.PolicyStatement[] = [
   new iam.PolicyStatement({

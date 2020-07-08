@@ -14,11 +14,12 @@
     "noUnusedParameters": false,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": false,
+    "esModuleInterop": true,
     "inlineSourceMap": true,
     "inlineSources": true,
     "experimentalDecorators": true,
     "strictPropertyInitialization": false,
     "typeRoots": ["./node_modules/@types"]
   },
-  "include": ["stack.ts", "cdk"]
+  "include": ["cdk", "src", "stack.ts", "constants.ts"]
 }

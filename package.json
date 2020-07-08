@@ -10,7 +10,9 @@
     "build": "tsc",
     "watch": "tsc -w",
     "cdk": "cdk",
-    "format": "prettier --write \"*.ts\""
+    "format": "prettier --write \"*.ts\"",
+    "synth": "tsc && cdk synth",
+    "deploy:dev": "cdk deploy"
   },
   "husky": {
     "hooks": {
@@ -24,9 +26,11 @@
     "@aws-cdk/aws-iam": "^1.50.0",
     "@aws-cdk/aws-lambda": "^1.50.0",
     "@aws-cdk/core": "^1.50.0",
+    "aws-sdk": "^2.711.0",
     "dotenv": "^8.2.0"
   },
   "devDependencies": {
+    "@types/aws-lambda": "^8.10.58",
     "@types/dotenv": "^8.2.0",
     "@types/node": "^14.0.19",
     "husky": "^4.2.5",

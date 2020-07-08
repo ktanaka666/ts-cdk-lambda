@@ -1,3 +1,8 @@
 {
-  "app": "node dist/stack"
+  "app": "node dist/stack",
+  "toolkitStackName": "ts-cdk-lambda",
+  "context": {
+    "@aws-cdk/core:enableStackNameDuplicates": "true",
+    "aws-cdk:enableDiffNoFail": "true"
+  }
 }
